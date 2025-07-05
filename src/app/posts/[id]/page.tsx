@@ -16,11 +16,7 @@ type User = {
   email: string;
 };
 
-type Props = {
-  params: { id: string };
-};
-
-export default async function PostDetail({ params }: Props) {
+export default async function PostDetail({ params }: { params: { id: string } }) {
   const postId = parseInt(params.id);
   
   if (isNaN(postId)) {
