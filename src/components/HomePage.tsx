@@ -5,6 +5,7 @@ import CarPostCard from '@/components/CarPostCard';
 import Status from './Status';
 import Banner from './Banner';
 import {Post, User} from '../types/index' 
+import NewTechnology from './NewTechnology';
 
 
 const POSTS_PER_PAGE = 6;
@@ -139,6 +140,7 @@ export default function HomePage() {
         </button>
       </div>
     </section>
+    <NewTechnology/>
     </div>
   );
 }
