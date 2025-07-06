@@ -27,7 +27,7 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Header with Back Button */}
+      
       <div className="relative h-24 flex items-center justify-start overflow-hidden">
         <div className="absolute top-6 left-6 z-20">
           <Link 
@@ -42,10 +42,10 @@ export default function ContactPage() {
         </div>
       </div>
 
-      {/* Contact Form Section */}
+      
       <div className="max-w-4xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          {/* Left Side - Contact Info */}
+          
           <div className="space-y-8">
             <div>
               <h2 className="text-3xl font-bold mb-4 text-white">Let's Connect</h2>
@@ -93,7 +93,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* Right Side - Contact Form */}
+          
           <div className="bg-gradient-to-b from-[#2A2A2A] to-[#252525] rounded-2xl p-8"
                style={{
                  boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(64, 64, 64, 0.3)'
@@ -157,7 +157,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        {/* Additional CTA Section */}
+        
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-blue-600/20 to-blue-700/20 rounded-2xl p-8 border border-blue-500/30">
             <h3 className="text-2xl font-bold mb-4 text-white">Join Our Community</h3>

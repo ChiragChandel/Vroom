@@ -24,7 +24,7 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white mt-10">
       <div className="max-w-7xl mx-auto px-6 py-16">
         
-        {/* First Row - Logo and Navigation */}
+        
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 mb-12">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full flex items-center justify-center">
@@ -46,7 +46,7 @@ export default function Footer() {
           </nav>
         </div>
 
-        {/* Second Row - Newsletter */}
+        
         <div className="mb-12">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
             <h3 className="text-white text-2xl font-bold">
@@ -74,28 +74,28 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Third Row - Address, Copyright, and Social Media */}
+        
         <div className="border-t border-gray-600 pt-8">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
             
-            {/* Address */}
+            
             <div className="text-center lg:text-left">
               <p className="text-gray-300 text-sm">
-                Firststreet 11B 2561 abctown
+                Developed By: Chirag Chandel
               </p>
               <p className="text-gray-300 text-sm">
-                hello@vroom.com 001 21345 442
+                chiragchandel10@gmail.com 
               </p>
             </div>
 
-            {/* Copyright */}
+            
             <div className="text-center">
               <p className="text-gray-400 text-sm">
                 © 2025 Vroom. All rights reserved.
               </p>
             </div>
-            
-            {/* Social Media */}
+
+
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 bg-gray-600 rounded-lg flex items-center justify-center text-gray-300 hover:bg-gray-500 hover:text-white transition-colors">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

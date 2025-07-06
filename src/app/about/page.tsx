@@ -6,9 +6,9 @@ export default function AboutPage() {
     <div className="min-h-screen bg-black text-white">
       
 
-      {/* Hero Section */}
+      
       <div className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Back Button */}
+        
           <div className="absolute top-6 left-6 z-10">
             <Link 
               href="/"
@@ -19,7 +19,7 @@ export default function AboutPage() {
               Back to Home
             </Link>
           </div>
-        {/* Background with gradient overlay */}
+        
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200&h=800&fit=crop&auto=format"
@@ -31,7 +31,7 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/90"></div>
         </div>
 
-        {/* Hero Content */}
+        
         <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
           <div className="mb-8">
             <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
@@ -42,7 +42,7 @@ export default function AboutPage() {
             </p>
           </div>
           
-          {/* Scroll indicator */}
+          
           <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
             <svg className="w-6 h-6 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
@@ -51,9 +51,9 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Main Content */}
+      
       <div className="max-w-4xl mx-auto px-6 py-20">
-        {/* Mission Section */}
+        
         <div className="mb-16">
           <div className="bg-gradient-to-b from-[#2A2A2A] to-[#252525] rounded-2xl p-8 md:p-12"
                style={{
@@ -69,7 +69,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* What We Cover */}
+        
         <div className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">What We Cover</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -107,7 +107,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Technology Stack */}
+        
         <div className="mb-16">
           <div className="bg-gradient-to-b from-[#2A2A2A] to-[#252525] rounded-2xl p-8 md:p-12"
                style={{
@@ -133,7 +133,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* CTA Section */}
+        
         <div className="text-center">
           <div className="bg-gradient-to-r from-blue-600/20 to-blue-700/20 rounded-2xl p-8 md:p-12 border border-blue-500/30">
             <h2 className="text-3xl font-bold mb-4 text-white">Ready to Explore?</h2>

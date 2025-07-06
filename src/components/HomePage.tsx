@@ -4,18 +4,8 @@ import { useEffect, useState } from 'react';
 import CarPostCard from '@/components/CarPostCard';
 import Status from './Status';
 import Banner from './Banner';
+import {Post, User} from '../types/index' 
 
-type Post = {
-  id: number;
-  userId: number;
-  title: string;
-  body: string;
-};
-
-type User = {
-  id: number;
-  name: string;
-};
 
 const POSTS_PER_PAGE = 6;
 
@@ -29,8 +19,6 @@ export default function HomePage() {
   const [currentPage, setCurrentPage] = useState(1);
 
   const tags = ['EV', 'SUV', 'Luxury', 'Hybrid', 'Sedan'];
-
-  // Static car images array
   const carImages = [
     'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400&h=300&fit=crop&auto=format',
     'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=400&h=300&fit=crop&auto=format',
@@ -65,7 +53,7 @@ export default function HomePage() {
         ]);
         const postsData = await postsRes.json();
         const usersData = await usersRes.json();
-        setPosts(postsData.slice(0, 12)); // Limit to 12 posts
+        setPosts(postsData.slice(0, 12)); 
         setUsers(usersData);
       } catch (err) {
         setError(true);
@@ -127,7 +115,7 @@ export default function HomePage() {
                 imageUrl={carImages[post.id % carImages.length]}
                 tag={tag}
                 likes={(post.id * 7) % 100}
-                rating={3 + (post.id % 3) + 0.2}
+                rating={Math.min(5, 3 + (post.id % 3) + 0.2)}
               />
             );
           })
