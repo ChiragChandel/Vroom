@@ -27,7 +27,7 @@ const TechCard = ({ tech, user }: { tech: Post; user: User }) => {
         <img
           src={imageUrl}
           alt={tech.title}
-          className="w-full h-48 object-cover"
+          className="w-full h-24 sm:h-48 object-cover"
         />
       </div>
       
@@ -36,7 +36,7 @@ const TechCard = ({ tech, user }: { tech: Post; user: User }) => {
           {tech.title}
         </h3>
         
-        <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-3">
+        <p className="text-gray-600 dark:text-gray-400 text-sm mb-4 line-clamp-2 sm:line-clamp-3">
           {tech.body.slice(0, 100)}...
         </p>
         
@@ -67,7 +67,7 @@ const NewTechnology = () => {
         const postsData = await postsRes.json();
         const usersData = await usersRes.json();
         
-        // Filter and modify posts to be tech-related
+        
         const techPosts = postsData.slice(0, 12).map((post: Post) => ({
           ...post,
           title: generateTechTitle(post.id)
@@ -87,19 +87,19 @@ const NewTechnology = () => {
 
   const generateTechTitle = (id: number) => {
     const techTitles = [
-      'Advanced AI Integration in Modern Vehicles',
-      'Electric Vehicle Battery Technology Breakthroughs',
-      'Autonomous Driving Systems Evolution',
-      'Connected Car IoT Innovations',
-      'Sustainable Manufacturing Processes',
-      'Next-Gen Infotainment Systems',
-      'Smart Traffic Management Solutions',
-      'Vehicle-to-Everything Communication',
-      'Augmented Reality in Automotive',
-      'Blockchain in Supply Chain Management',
-      'Cybersecurity for Connected Vehicles',
-      'Predictive Maintenance Technology'
-    ];
+    'AI Copilot for Driving Assistance',
+    'Solid-State EV Batteries Upgrade',
+    'Neural-Based Self-Driving Systems',
+    '5G V2X Car Connectivity',
+    'EVs with Green Manufacturing',
+    'AR HUDs in Car Displays',
+    'Smart Traffic via AI Signals',
+    'Edge-Powered V2X Networks',
+    'Mixed Reality Car Dashboards',
+    'Blockchain Car Service Logs',
+    'Secure Smart Car Cyber Layer',
+    'Sensor-Based Predictive Maintenance'
+    ]
     return techTitles[id % techTitles.length];
   };
 
